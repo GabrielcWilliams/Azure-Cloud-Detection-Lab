@@ -125,9 +125,9 @@ This section demonstrates how to detect the creation of scheduled tasks (Event I
    ```
 4. Configure Sentinel to alert when these events are detected.
 
-![Analytic Rule Creation](./creating%20a%20analytic%20rule.png)
+![Analytic Rule Creation](./images/creating%20a%20analytic%20rule.png)
 
-![Custom Rule Logic](./creating%20the%20rule%20logic.png)
+![Custom Rule Logic](./images/creating%20the%20rule%20logic.png)
 
 ---
 
@@ -141,6 +141,14 @@ Detection strategies include:
 - Restricting privileges to limit task creation to authorized accounts.
 
 ![MITRE ATT&CK Mapping](./accessed%20vm%20with%20remote%20desktop%20on%20mac.png)
+
+---
+
+## Detection
+
+As observed, monitoring and logging specific Windows Event IDs were used to detect this activity.
+
+![New Scheduled Task](./new%20scheuled%20task.png)
 
 ---
 
