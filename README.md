@@ -26,7 +26,7 @@ Resource groups in Azure serve as logical containers for managing resources. The
 1. Search for **Resource Group** in the Azure portal search bar.
 2. Provide the required information, including the name and region, and click **Create**.
 
-![Resource Group Creation](./images/resource-grou.png)
+![Resource Group Creation](./images/resource grou.png)
 
 ---
 
@@ -40,7 +40,7 @@ A Windows 10 Virtual Machine (VM) is deployed for log collection:
 4. Use the default settings for disks, networking, and management.
 5. Click **Review + Create**.
 
-![Virtual Machine Overview](./images/labvm-creation.png)
+![Virtual Machine Overview](./images/labvm creation.png)
 
 ---
 
@@ -54,7 +54,7 @@ To reduce the attack surface and secure the VM:
 2. Restrict RDP access to specific IPs for a limited time.
 3. Verify updated rules in the VM's Networking tab.
 
-![Just-in-Time Access Configuration](./images/microsoft-defnder.png)
+![Just-in-Time Access Configuration](./images/microsoft denfnder.png)
 
 ---
 
@@ -76,7 +76,7 @@ Microsoft Sentinel is added to the Log Analytics Workspace:
 1. Search **Microsoft Sentinel** in the Azure portal.
 2. Add Sentinel to the previously created workspace.
 
-![Sentinel Deployment](./images/log-analytics.png)
+![Sentinel Deployment](./images/log analytics.png)
 
 ---
 
@@ -90,7 +90,7 @@ To bring Windows Security Events into Sentinel:
 2. Search for "Windows Security Events via AMA."
 3. Create a **Data Collection Rule** and link it to the VM.
 
-![Data Connectors Setup](./images/connector-for-windows-events.png)
+![Data Connectors Setup](./images/connector for windows events.png)
 
 ---
 
@@ -98,7 +98,7 @@ To bring Windows Security Events into Sentinel:
 
 Security events can be observed in the **Event Viewer** on the VM. For instance, Event ID 4624 represents successful logins. These events are queried and analyzed in Sentinel using KQL.
 
-![Event Viewer Logs](./images/running-a-simple-kql-qu...ual-event.png)
+![Event Viewer Logs](./images/running a simple KQL query from an actual event.png)
 
 ---
 
@@ -119,9 +119,9 @@ This section demonstrates how to create a custom analytic rule to detect Event I
    ```
 4. Configure analytic rules to generate alerts for these events.
 
-![Analytic Rule Creation](./images/creating-a-analytic-rule.png)
+![Analytic Rule Creation](./images/creating a analytic rule.png)
 
-![Custom Rule Logic](./images/creating-the-rule-logic.png)
+![Custom Rule Logic](./images/creating the rule logic.png)
 
 ---
 
@@ -132,10 +132,20 @@ This lab aligns with the **TA0003 - Persistence** tactic from the MITRE ATT&CK f
 - Monitoring Event ID 4698 for scheduled tasks.
 - Restricting user account privileges to prevent unauthorized task creation.
 
-![MITRE ATT&CK Mapping](./images/accessed-vm-with-remote...p-on-mac.png)
+![MITRE ATT&CK Mapping](./images/accessed vm with remote desktop on mac.png)
 
 ---
 
 ## Conclusion
 
 This project highlights the foundational skills required for working with SIEM tools such as Microsoft Sentinel. It provides hands-on experience with Azure resources, log analysis, and custom detection rule creation. By following this guide, users can gain valuable insights into real-world security operations.
+
+> **Reminder:** Delete unused resources to avoid incurring additional costs.
+
+---
+
+### Next Steps:
+
+1. Clone this repository to follow along with the guide.
+2. Upload the images to the `images` folder in the repository to ensure they display correctly.
+3. Test each step to familiarize yourself with the lab environment.
