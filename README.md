@@ -27,7 +27,7 @@ Resource groups in Azure are used to organize resources logically. Follow these 
 1. Search for **Resource Group** in the Azure portal search bar.
 2. Provide a name, select a region, and click **Create**.
 
-![Resource Group Creation](./images/resource grou.png)
+![Resource Group Creation](./resource%20grou.png)
 
 ---
 
@@ -41,7 +41,7 @@ A Windows 10 Virtual Machine (VM) is created for collecting and analyzing securi
 4. Use default settings for disks, networking, and management.
 5. Click **Review + Create**.
 
-![Virtual Machine Overview](./images/labvm creation.png)
+![Virtual Machine Overview](./labvm%20creation.png)
 
 ---
 
@@ -55,7 +55,7 @@ To minimize security risks, enable Just-in-Time (JIT) access to the VM:
 2. Enable JIT for the VM, restricting RDP access to specific IPs for limited timeframes.
 3. Verify updated rules in the Networking tab of the VM.
 
-![Just-in-Time Access Configuration](./images/microsoft denfnder.png)
+![Just-in-Time Access Configuration](./microsoft%20denfnder.png)
 
 ---
 
@@ -65,10 +65,10 @@ To minimize security risks, enable Just-in-Time (JIT) access to the VM:
 
 The Log Analytics Workspace is where log data will be stored and analyzed:
 
-1. Search for **Log Analytics Workspace** in the Azure portal.
+1. Search **Log Analytics Workspace** in the Azure portal.
 2. Create the workspace within the same resource group as the VM.
 
-![Log Analytics Workspace Creation](./images/log analytics.png)
+![Log Analytics Workspace Creation](./log%20analytics.png)
 
 ---
 
@@ -79,7 +79,7 @@ Microsoft Sentinel connects to the Log Analytics Workspace for managing and anal
 1. Search for **Microsoft Sentinel** in the Azure portal.
 2. Add Sentinel to the previously created workspace.
 
-![Microsoft Sentinel Deployment](./images/log analytics.png)
+![Microsoft Sentinel Deployment](./log%20analytics.png)
 
 ---
 
@@ -93,7 +93,7 @@ Data Connectors allow you to bring logs from the VM into Sentinel:
 2. Search for "Windows Security Events via AMA."
 3. Create a **Data Collection Rule** and link it to the VM.
 
-![Data Connectors Setup](./images/connector for windows events.png)
+![Data Connectors Setup](./connector%20for%20windows%20events.png)
 
 ---
 
@@ -104,7 +104,7 @@ Security events can be analyzed using the Event Viewer on the VM. For example:
 - Event ID 4624 indicates a successful login.
 - Query logs using KQL in Sentinel to find and analyze these events.
 
-![Event Viewer Logs](./images/running a simple KQL query from an actual event.png)
+![Event Viewer Logs](./running%20a%20simple%20KQL%20query%20from%20an%20actual%20event.png)
 
 ---
 
@@ -125,9 +125,9 @@ This section demonstrates how to detect the creation of scheduled tasks (Event I
    ```
 4. Configure Sentinel to alert when these events are detected.
 
-![Analytic Rule Creation](./images/creating a analytic rule.png)
+![Analytic Rule Creation](./creating%20a%20analytic%20rule.png)
 
-![Custom Rule Logic](./images/creating the rule logic.png)
+![Custom Rule Logic](./creating%20the%20rule%20logic.png)
 
 ---
 
@@ -140,7 +140,7 @@ Detection strategies include:
 - Monitoring Event ID 4698 to identify task creation.
 - Restricting privileges to limit task creation to authorized accounts.
 
-![MITRE ATT&CK Mapping](./images/accessed vm with remote desktop on mac.png)
+![MITRE ATT&CK Mapping](./accessed%20vm%20with%20remote%20desktop%20on%20mac.png)
 
 ---
 
